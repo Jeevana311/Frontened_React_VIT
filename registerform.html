@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+        <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e8f0f8;
+        padding: 30px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        text-align: center;
+        color: #1a4d8f;
+        margin-bottom: 25px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #1a73e8;
+        box-shadow: 0 0 5px rgba(26,115,232,0.3);
+    }
+
+    .options {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f7f9fc;
+        border-radius: 5px;
+    }
+
+    .options input[type="radio"] {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+        margin-top: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0d47a1;
+    }
+
+    br {
+        display: none;
+    }
+
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Feedback Form</h1>
+            <form action="#" method="post">
+                <label for="name">Patient Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <label for="number">Age:</label>
+                <input type="number" id="number" name="number" placeholder="Enter your age" required><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" placeholder="Select a date" required><br>
+                <label for="doctor">Doctor Name:</label>
+                <input type="text" id="doctor" name="doctor" placeholder="Enter doctor's name" required><br>
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select a department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="dermatology">Dermatology</option>
+                </select><br>
+
+                <label>1.How satisfied are you with your overall checkup experience?</label>
+                <div class="options">
+                    <input type="radio" name="experience" value="Excellent">Excellent
+                    <input type="radio" name="experience" value="Good">Good
+                    <input type="radio" name="experience" value="Average">Average
+                    <input type="radio" name="experience" value="Poor">Poor
+                </div>
+
+                <label>2.How was the doctor's behavior and communication?</label>
+                <div class="options">
+                    <input type="radio" name="communication" value="Excellent">Excellent
+                    <input type="radio" name="communication" value="Good">Good
+                    <input type="radio" name="communication" value="Average">Average
+                    <input type="radio" name="communication" value="Poor">Poor
+                </div>
+
+                <label>3.How would you rate the cleanliness and comfort of the facility?</label>
+                <div class="options">
+                    <input type="radio" name="cleanliness" value="Excellent">Excellent
+                    <input type="radio" name="cleanliness" value="Good">Good
+                    <input type="radio" name="cleanliness" value="Average">Average
+                    <input type="radio" name="cleanliness" value="Poor">Poor
+                </div>
+
+                <label>4.How likely are you to recommend our hospital to others?</label>
+                <div class="options">
+                    <input type="radio" name="recommendation" value="Very Likely">Very Likely
+                    <input type="radio" name="recommendation" value="Likely">Likely
+                    <input type="radio" name="recommendation" value="Unlikely">Unlikely
+                    <input type="radio" name="recommendation" value="Very Unlikely">Very Unlikely
+                </div>
+
+                <label>5.Are you satisfied with the treatment you received?</label>
+                <div class="options">
+                    <input type="radio" name="treatment" value="Excellent">Excellent
+                    <input type="radio" name="treatment" value="Good">Good
+                    <input type="radio" name="treatment" value="Average">Average
+                    <input type="radio" name="treatment" value="Poor">Poor
+                </div>
+
+                <label>6.Would you recommend our hospital to others?</label>
+                <div class="options">
+                    <input type="radio" name="recommend" value="Yes">Yes
+                    <input type="radio" name="recommend" value="No">No
+                </div>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea><br>
+
+                <button type="submit" value="Submit">Submit Feedback</button>
+            </form>
+            </div>
+    </body>

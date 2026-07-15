@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0f8;
+            padding: 30px;
+        }
+
+        .container {
+            width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a4d8f;
+            margin-bottom: 25px;
+        }
+
+        .section {
+            color: #1a4d8f;
+            border-bottom: 2px solid #1a4d8f;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .radio input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Job Application Form</h1>
+
+<form>
+
+<h3 class="section">Personal Details</h3>
+
+<div class="row">
+
+<div>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+</div>
+
+<div>
+<label>Date of Birth</label>
+<input type="date" required>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email" required>
+</div>
+
+<div>
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number" required>
+</div>
+
+</div>
+
+
+<label>Gender</label>
+<div class="radio">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</div>
+
+
+<h3 class="section">Job Details</h3>
+
+
+<label>Position Applied For</label>
+<select>
+    <option>Select Position</option>
+    <option>Software Developer</option>
+    <option>Data Analyst</option>
+    <option>Web Developer</option>
+    <option>UI/UX Designer</option>
+    <option>Tester</option>
+</select>
+
+
+<label>Department</label>
+<select>
+    <option>Select Department</option>
+    <option>IT</option>
+    <option>HR</option>
+    <option>Finance</option>
+    <option>Marketing</option>
+</select>
+
+
+<label>Experience</label>
+<select>
+    <option>Select Experience</option>
+    <option>Fresher</option>
+    <option>1-2 Years</option>
+    <option>3-5 Years</option>
+    <option>5+ Years</option>
+</select>
+
+
+<label>Skills</label>
+<input type="text" placeholder="Enter your skills">
+
+
+<h3 class="section">Educational Details</h3>
+
+
+<label>Highest Qualification</label>
+<input type="text" placeholder="Enter qualification">
+
+
+<label>College / University</label>
+<input type="text" placeholder="Enter college name">
+
+
+<label>Resume Upload</label>
+<input type="file">
+
+
+<h3 class="section">Additional Information</h3>
+
+
+<label>Address</label>
+<textarea placeholder="Enter your address"></textarea>
+
+
+<label>Why should we hire you?</label>
+<textarea placeholder="Write your answer"></textarea>
+
+
+<button type="submit">Submit Application</button>
+
+
+</form>
+
+</div>
+
+</body>
+</html>
