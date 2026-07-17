@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <style>body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0f8;
+    padding: 30px;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #1a4d8f;
+    margin-bottom: 25px;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 70px;
+}
+
+hr {
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        <hr>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB" required><br>
+        <hr>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+        <hr>
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter Phone Number" required><br>
+        <hr>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="gender">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        <hr>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your Address" required><br>
+        <hr>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Enter your City" required><br>
+        <hr>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="Enter your State" required><br>
+        <hr>
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" placeholder="Enter your Zip Code" required><br>
+        <hr>
+        <label for ="country">Country:</label>
+        <input type="text" id="country" name="country" placeholder="Enter your Country" required><br>
+        <hr>
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch" required>
+            <option value="branch">Select Branch</option>
+            <option value="cse">CSE</option>
+            <option value="ai&ds">AI&DS</option>
+            <option value="ece">ECE</option>
+            <option value="mech">MECH</option>
+            <option value="civil">CIVIL</option>
+        </select><br>
+        <hr>
+        <label for="qualification">Qualification:</label>
+        <input type="text" id="qualification" name="qualification" placeholder="Enter your Qualification" required><br>
+        <hr>
+        <label for="emergencyContact">Emergency Contact:</label>
+        <input type="tel" id="emergencyContact" name="emergencyContact" placeholder="Enter Phone Number" required><br>
+        <hr>
+        <label for="bloodGroup">Blood Group:</label>
+        <select id="bloodGroup" name="bloodGroup" required>
+            <option value="bloodGroup">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select><br>
+        <hr>
+        <label for="signature">Signature:</label>
+        <input type="file" id="signature" name="signature" accept="image/*" required><br>
+        <hr>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+        <hr>
+        <button type="submit">Register</button>
+        </form>
+        </div>
+    </body>
+</html>

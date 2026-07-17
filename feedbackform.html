@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Feedback Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0f8;
+            padding: 30px;
+        }
+
+        .container {
+            width: 650px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a4d8f;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .question {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .options {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f7f9fc;
+            border-radius: 5px;
+        }
+
+        .options input {
+            width: auto;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Feedback Form</h1>
+
+<form>
+
+<label>Patient Name:</label>
+<input type="text" placeholder="Enter your name" required>
+
+
+<label>Age:</label>
+<input type="number" placeholder="Enter your age" required>
+
+
+<label>Date:</label>
+<input type="date" required>
+
+
+<label>Doctor Name:</label>
+<input type="text" placeholder="Enter doctor's name" required>
+
+
+<label>Department:</label>
+<select>
+    <option>Select a department</option>
+    <option>Cardiology</option>
+    <option>Neurology</option>
+    <option>Orthopedics</option>
+    <option>Pediatrics</option>
+    <option>Dermatology</option>
+</select>
+
+
+<div class="question">
+1. How satisfied are you with your overall checkup experience?
+</div>
+
+<div class="options">
+    <input type="radio" name="experience">Excellent
+    <input type="radio" name="experience">Good
+    <input type="radio" name="experience">Average
+    <input type="radio" name="experience">Poor
+</div>
+
+
+<div class="question">
+2. How was the doctor's behavior and communication?
+</div>
+
+<div class="options">
+    <input type="radio" name="communication">Excellent
+    <input type="radio" name="communication">Good
+    <input type="radio" name="communication">Average
+    <input type="radio" name="communication">Poor
+</div>
+
+
+<div class="question">
+3. How would you rate the cleanliness and comfort of the facility?
+</div>
+
+<div class="options">
+    <input type="radio" name="cleanliness">Excellent
+    <input type="radio" name="cleanliness">Good
+    <input type="radio" name="cleanliness">Average
+    <input type="radio" name="cleanliness">Poor
+</div>
+
+
+<div class="question">
+4. How likely are you to recommend our hospital to others?
+</div>
+
+<div class="options">
+    <input type="radio" name="recommend">Very Likely
+    <input type="radio" name="recommend">Likely
+    <input type="radio" name="recommend">Unlikely
+    <input type="radio" name="recommend">Very Unlikely
+</div>
+
+
+<div class="question">
+5. Are you satisfied with the treatment you received?
+</div>
+
+<div class="options">
+    <input type="radio" name="treatment">Excellent
+    <input type="radio" name="treatment">Good
+    <input type="radio" name="treatment">Average
+    <input type="radio" name="treatment">Poor
+</div>
+
+
+<div class="question">
+6. Would you recommend our hospital to others?
+</div>
+
+<div class="options">
+    <input type="radio" name="recommendation">Yes
+    <input type="radio" name="recommendation">No
+</div>
+
+
+<label>Additional Comments:</label>
+<textarea placeholder="Enter your comments here"></textarea>
+
+
+<button type="submit">Submit Feedback</button>
+
+
+</form>
+
+</div>
+
+</body>
+</html>
